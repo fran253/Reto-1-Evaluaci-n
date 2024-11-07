@@ -1,0 +1,42 @@
+.banner {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 20px 0;
+    .banner-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.cartelera {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 20px 0;
+    h2 {
+        font-size: 150px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    .peliculas {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 40px;
+        .pelicula {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            img {
+                width: 100%;
+                height: 100%;
+                display: block;
+            }
+        }
+        
+    }
+    
+
+}
+
