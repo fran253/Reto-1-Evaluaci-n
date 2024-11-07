@@ -113,6 +113,7 @@ footer {
     cursor: default;
 }
 
+
 .footer-column p:hover {
     color: #333; /* Efecto de oscurecimiento al pasar el ratón */
 }

@@ -10,3 +10,4 @@ navItems.forEach(item => {
         item.style.color = '#0f1a34'; // Restaurar el color original al quitar el ratón
     });
 });
+
