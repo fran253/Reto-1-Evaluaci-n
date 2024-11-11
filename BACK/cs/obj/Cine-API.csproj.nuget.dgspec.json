@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {}
+    "e:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {}
   },
   "projects": {
-    "E:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {
+    "e:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
+        "projectUniqueName": "e:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
         "projectName": "Cine-API",
-        "projectPath": "E:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
+        "projectPath": "e:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
         "packagesPath": "C:\\Users\\S2-PC00\\.nuget\\packages\\",
-        "outputPath": "E:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\obj\\",
+        "outputPath": "e:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

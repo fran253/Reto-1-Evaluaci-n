@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("restaurant-API")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Cine-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36488ce8bd25b58ffe10ff5205c8dd8fcf9fa350")]
-[assembly: System.Reflection.AssemblyProductAttribute("restaurant-API")]
-[assembly: System.Reflection.AssemblyTitleAttribute("restaurant-API")]
+[assembly: System.Reflection.AssemblyProductAttribute("Cine-API")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Cine-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.

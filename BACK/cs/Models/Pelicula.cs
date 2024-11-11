@@ -3,6 +3,8 @@ namespace Models;
 public class Pelicula {
     public int IdPelicula {get;set;}
     public string Nombre {get;set;}
+    public string Imagen {get;set;}
+    public string Director {get;set;}
     public int Duracion {get;set;}
     public string Actores {get;set;}
     public string EdadMinima {get;set;}
@@ -14,9 +16,11 @@ public class Pelicula {
 
 
 
-    public Pelicula(int idpelicula, string nombre, int duracion, string actores, string edadminima, DateTime fechaestreno, DateTime horario, string descripcion, int identrada, int idsala) {
+    public Pelicula(int idpelicula, string nombre,string imagen, string director, int duracion, string actores, string edadminima, DateTime fechaestreno, DateTime horario, string descripcion, int identrada, int idsala) {
         IdPelicula = idpelicula;
         Nombre = nombre;
+        Imagen = imagen;
+        Director = director;
         Duracion = duracion;
         Actores = actores;
         EdadMinima = edadminima;

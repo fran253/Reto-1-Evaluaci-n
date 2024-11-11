@@ -1,20 +1,16 @@
 {
     "version": "0.2.0",
     "configurations": [
+    
         {
-            // Use IntelliSense para averiguar qué atributos existen para la depuración de C#.
-            // Usar el puntero por encima para la descripción de los atributos existentes
-            // Para obtener más información, visite https://github.com/dotnet/vscode-csharp/blob/main/debugger-launchjson.md.
             "name": ".NET Core Launch (web)",
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            // Si ha cambiado las plataformas de destino, asegúrese de actualizar la ruta de acceso del programa.
-            "program": "${workspaceFolder}/bin/Debug/net8.0/Cine-API.dll",
+            "program": "${workspaceFolder}/BACK/cs/bin/Debug/net8.0/Cine-API.dll",
             "args": [],
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder}/BACK/cs",
             "stopAtEntry": false,
-            // Habilite el inicio de un explorador web cuando se inicie ASP.NET Core. Para obtener más información: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
@@ -30,6 +26,19 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "name": "C#: Cine-API [Default Configuration]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\BACK\\cs\\Cine-API.csproj"
+        },
+        {
+            "name": "C#: Cine-API [http]",
+            "type": "dotnet",
+            "request": "launch",
+            "projectPath": "${workspaceFolder}\\BACK\\cs\\Cine-API.csproj",
+            "launchConfigurationId": "TargetFramework=;http"
         }
     ]
 }
