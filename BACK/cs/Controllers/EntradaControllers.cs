@@ -27,9 +27,8 @@ namespace CineApi.Controllers
         [HttpPost]
         public ActionResult Create([FromBody] Entrada entrada)
         {
-            var newEntrada = new Entrada(entrada.IdEntrada, entrada.Precio); // Usando el constructor solicitado
-            Entradas.Add(newEntrada);
-            return CreatedAtAction(nameof(GetById), new { id = newEntrada.IdEntrada }, newEntrada);
+            Entradas.Add(entrada);
+            return CreatedAtAction(nameof(GetById), new { id = entrada.IdEntrada }, entrada);
         }
 
         [HttpPut("{id}")]

@@ -1,6 +1,6 @@
 namespace Models;
 
-public abstract class Asiento {
+public class Asiento {
     public int IdAsiento {get;set;}
     public int Fila {get;set;}
     public int Columna {get;set;}
