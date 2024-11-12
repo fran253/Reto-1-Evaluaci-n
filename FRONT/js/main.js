@@ -1,46 +1,31 @@
-// FETCH CON LA API DE JSON DE LA BASE DE DATOS
-async function fetchPeliculas() {
-    const url = 'http://localhost:5199/CinemaParaiso/Pelicula';
+document.addEventListener("DOMContentLoaded", function () {
+    const peliculasContainer = document.querySelector(".peliculas");
 
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const peliculas = await response.json();
-        console.log('peliculas fetched:', peliculas);
-        peliculas.forEach(createPelicula);
-    } catch (error) {
-        console.error('Error fetching peliculas:', error);
-    }
-}
+    fetch("https://localhost:7056/CinemaParaiso/Pelicula")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error al obtener las películas");
+            }
+            return response.json();
+        })
+        .then(peliculas => {
+            peliculas.forEach(pelicula => {
+                const peliculaDiv = document.createElement("div");
+                peliculaDiv.classList.add("pelicula");
 
-function createPelicula(pelicula) {
-    const peliculasList = document.querySelector('.peliculas');
-    if (!peliculasList) {
-        console.error('.peliculas no encontrado');
-        return;
-    }
+                peliculaDiv.innerHTML = `
+                <div class="pelicula">
+                    <img src="${pelicula.imagen}" alt="${pelicula.nombre}">
+                    <h3>${pelicula.nombre}</h3>
+                </div>
+                `;
 
-    const card = document.createElement('div');
-    card.classList.add('card');
-
-    const { imagen, nombre } = pelicula;
-
-    card.innerHTML = `
-        <div class="pelicula">
-            <img src="${imagen}" alt="${nombre}">
-            <h3>${nombre}</h3>
-        </div>
-    `;
-
-    peliculasList.appendChild(card);
-}
-
-document.addEventListener('DOMContentLoaded', fetchPeliculas);
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
+                peliculasContainer.appendChild(peliculaDiv);
+            });
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            peliculasContainer.innerHTML = "<p>Error al cargar las películas</p>";
+        });
+});
 

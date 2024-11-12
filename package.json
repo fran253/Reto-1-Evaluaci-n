@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "gulp-sass": "^5.1.0",
+    "owl.carousel": "^2.3.4",
     "sass": "^1.80.6"
   }
 }
