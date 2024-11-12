@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles de Película - Cinema Paradiso</title>
-    <link rel="stylesheet" href="../css/PeliculasHorariosYSala.css">
+    <link rel="stylesheet" href="../css/ReservarAsientos.css">
 </head>
 <body>
     <div class="logo">
@@ -22,36 +22,36 @@
     </header>
 
     <main class="main-content">
-        <div class="movie-container">
-            <div class="movie-container__poster-details">
-                <img src="../imgs/MonstersvsAliens.jpg" alt="Póster de Monstruos vs Alienígenas" class="movie-container__poster-image">
-                <div class="movie-details">
-                    <div class="movie-details__title">
-                        MONSTRUOS VS ALIENÍGENAS
-                        <span class="movie-details__rating">TP</span>
-                    </div>
-                    <p class="movie-details__info"><span class="movie-details__info-label">Director:</span> Rob Letterman, Conrad Vernon</p>
-                    <p class="movie-details__info"><span class="movie-details__info-label">Duración:</span> 94 min</p>
-                    <p class="movie-details__info"><span class="movie-details__info-label">Fecha Estreno:</span> 27 de marzo de 2009</p>
-                    <p class="movie-details__info"><span class="movie-details__info-label">Actores:</span> Reese Witherspoon, Hugh Laurie, Seth Rogen</p>
-                    <p class="movie-details__info"><span class="movie-details__info-label">Género:</span> Animación, Comedia, Ciencia Ficción</p>
-                </div>
-            </div>
-            <div class="movie-container__synopsis">
-                <h3>Sinopsis</h3>
-                <p>Cuando un meteorito del espacio golpea a Susan Murphy y la convierte en una gigante, el gobierno decide encerrarla junto con un grupo de monstruos. Sin embargo, cuando un misterioso robot alienígena amenaza la Tierra, ellos son la última esperanza para salvar el planeta.</p>
+        <div class="movie-details-container">
+            <h2 class="movie-title">SIN CHAN</h2>
+            <img src="../imgs/MonstersvsAliens.jpg" alt="Póster de Sin Chan" class="movie-poster">
+            <p class="movie-info"><strong>Cine:</strong> Nombre_Cine</p>
+            <p class="movie-info"><strong>Horario:</strong> Horario_Cine</p>
+            <div class="trailer">
+                <a href="#" target="_blank">
+                    <img src="../imgs/trailer-icon.png" alt="Ver Trailer" class="trailer-icon">
+                </a>
             </div>
         </div>
-        
-        <div class="schedule-section">
-            <h2 class="schedule-section__title">Horarios</h2>
-            <div class="schedule-section__grid">
-                <div class="schedule-section__item">16:00<br>Sala 1</div>
-                <div class="schedule-section__item">18:30<br>Sala 2</div>
-                <div class="schedule-section__item">20:00<br>Sala 3</div>
-                <div class="schedule-section__item">22:15<br>Sala 4</div>
-            </div>
+
+        <!-- Leyenda de Asientos -->
+        <div class="seat-legend">
+            <div class="legend-item"><span class="seat free"></span> Libre</div>
+            <div class="legend-item"><span class="seat occupied"></span> Ocupado</div>
+            <div class="legend-item"><span class="seat selected"></span> Seleccionado</div>
+            <div class="legend-item"><span class="seat vip"></span> VIP</div>
         </div>
+
+        <!-- Pantalla -->
+        <div class="screen">Pantalla</div>
+
+        <!-- Cuadrícula de Asientos -->
+        <div class="seats-container">
+            <!-- Aquí se generarán los asientos usando JavaScript -->
+        </div>
+
+        <!-- Botón de Comprar Entradas -->
+        <button class="purchase-button">Comprar Entradas</button>
     </main>
 
     <footer class="footer">
@@ -82,5 +82,6 @@
         </div>
     </footer>
 
+    <script src="../js/ReservarAsientos.js  "></script>
 </body>
 </html>
