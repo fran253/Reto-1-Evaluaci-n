@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {}
+    "d:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {}
   },
   "projects": {
-    "D:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {
+    "d:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
+        "projectUniqueName": "d:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
         "projectName": "Cine-API",
-        "projectPath": "D:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
+        "projectPath": "d:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\Cine-API.csproj",
         "packagesPath": "C:\\Users\\franr\\.nuget\\packages\\",
-        "outputPath": "D:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\obj\\",
+        "outputPath": "d:\\GRADO SUPERIOR (año2)\\TRABAJO 1er TRIMESTRE\\BACK\\cs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\franr\\AppData\\Roaming\\NuGet\\NuGet.Config"
