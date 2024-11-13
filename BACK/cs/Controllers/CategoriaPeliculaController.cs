@@ -26,7 +26,7 @@ namespace CineApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<CategoriaPelicula> GetById(int id)
         {
-            var categoriaPelicula = categoriapeliculas.FirstOrDefault(p => p.IdCategoriaPelicula == id);
+            var categoriaPelicula = categoriapeliculas.FirstOrDefault(p => p.Id == id);
             if (categoriaPelicula == null)
                 return NotFound();
             return Ok(categoriaPelicula);
@@ -36,13 +36,13 @@ namespace CineApi.Controllers
         public ActionResult<CategoriaPelicula> Create([FromBody] CategoriaPelicula categoriaPelicula)
         {
             categoriapeliculas.Add(categoriaPelicula);
-            return CreatedAtAction(nameof(GetById), new { id = categoriaPelicula.IdCategoriaPelicula }, categoriaPelicula);
+            return CreatedAtAction(nameof(GetById), new { id = categoriaPelicula.Id }, categoriaPelicula);
         }
 
         [HttpPut("{id}")]
         public ActionResult Update(int id, [FromBody] CategoriaPelicula updatedCategoriaPelicula)
         {
-            var categoriaPelicula = categoriapeliculas.FirstOrDefault(p => p.IdCategoriaPelicula == id);
+            var categoriaPelicula = categoriapeliculas.FirstOrDefault(p => p.Id == id);
             if (categoriaPelicula == null)
                 return NotFound();
 
@@ -54,7 +54,7 @@ namespace CineApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var categoriaPelicula = categoriapeliculas.FirstOrDefault(p => p.IdCategoriaPelicula == id);
+            var categoriaPelicula = categoriapeliculas.FirstOrDefault(p => p.Id == id);
             if (categoriaPelicula == null)
                 return NotFound();
 

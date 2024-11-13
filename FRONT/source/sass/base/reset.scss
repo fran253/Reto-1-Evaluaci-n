@@ -12,3 +12,22 @@ body {
     align-items: center;
     font-family: "Jura", sans-serif;
 }
+.banner{
+#owl-demo {
+    height: 50%;
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        overflow: hidden; 
+        img{
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+            opacity: 65%;
+        }
+    } 
+}
+}
+

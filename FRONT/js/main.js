@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const peliculasContainer = document.querySelector(".peliculas");
+    const owlPelis = document.querySelector("#owl-pelis");
+
+    if (!owlPelis) {
+        console.error("No se encontró el elemento con ID #owl-pelis");
+        return;
+    }
 
     fetch("https://localhost:7056/CinemaParaiso/Pelicula")
         .then(response => {
@@ -10,22 +15,24 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(peliculas => {
             peliculas.forEach(pelicula => {
-                const peliculaDiv = document.createElement("div");
-                peliculaDiv.classList.add("pelicula");
+                const itemDiv = document.createElement("div");
+                itemDiv.classList.add("item");
 
-                peliculaDiv.innerHTML = `
-                <div class="pelicula">
-                    <img src="${pelicula.imagen}" alt="${pelicula.nombre}">
-                    <h3>${pelicula.nombre}</h3>
-                </div>
+                itemDiv.innerHTML = `
+                    <div class="pelicula">
+                        <img src="${pelicula.imagen}" alt="${pelicula.nombre}">
+                        <h3>${pelicula.nombre}</h3>
+                    </div>
                 `;
 
-                peliculasContainer.appendChild(peliculaDiv);
+                owlPelis.appendChild(itemDiv);
             });
+
+            // Emitir evento personalizado cuando las películas están cargadas
+            document.dispatchEvent(new Event("peliculasCargadas"));
         })
         .catch(error => {
             console.error("Error:", error);
-            peliculasContainer.innerHTML = "<p>Error al cargar las películas</p>";
+            owlPelis.innerHTML = "<p>Error al cargar las películas</p>";
         });
 });
-

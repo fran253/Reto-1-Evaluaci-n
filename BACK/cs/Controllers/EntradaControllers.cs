@@ -18,7 +18,7 @@ namespace CineApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<Entrada> GetById(int id)
         {
-            var entrada = Entradas.FirstOrDefault(e => e.IdEntrada == id);
+            var entrada = Entradas.FirstOrDefault(e => e.Id == id);
             if (entrada == null)
                 return NotFound();
             return Ok(entrada);
@@ -28,13 +28,13 @@ namespace CineApi.Controllers
         public ActionResult Create([FromBody] Entrada entrada)
         {
             Entradas.Add(entrada);
-            return CreatedAtAction(nameof(GetById), new { id = entrada.IdEntrada }, entrada);
+            return CreatedAtAction(nameof(GetById), new { id = entrada.Id }, entrada);
         }
 
         [HttpPut("{id}")]
         public ActionResult Update(int id, [FromBody] Entrada updatedEntrada)
         {
-            var entrada = Entradas.FirstOrDefault(e => e.IdEntrada == id);
+            var entrada = Entradas.FirstOrDefault(e => e.Id == id);
             if (entrada == null)
                 return NotFound();
 
@@ -45,7 +45,7 @@ namespace CineApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var entrada = Entradas.FirstOrDefault(e => e.IdEntrada == id);
+            var entrada = Entradas.FirstOrDefault(e => e.Id == id);
             if (entrada == null)
                 return NotFound();
 

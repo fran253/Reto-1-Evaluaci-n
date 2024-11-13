@@ -3,7 +3,7 @@ using System.Data;
 namespace Models;
 
 public class Pelicula : CategoriaPelicula {
-    public int IdPelicula {get;set;}
+    public int Id {get;set;}
     public string Nombre {get;set;}
     public string Imagen {get;set;}
     public string Director {get;set;}
@@ -18,8 +18,8 @@ public class Pelicula : CategoriaPelicula {
 
 
 
-    public Pelicula(int idpelicula, string nombre,string imagen, string director, int duracion, string actores, string edadminima, DateTime fechaestreno, DateTime horario, string descripcion, int identrada, int idsala, int idCategoriaPelicula, string nombreCategoria): base(idCategoriaPelicula, nombreCategoria) {
-        IdPelicula = idpelicula;
+    public Pelicula(int id, string nombre,string imagen, string director, int duracion, string actores, string edadminima, DateTime fechaestreno, DateTime horario, string descripcion, int identrada, int idsala, int idCategoriaPelicula, string nombreCategoria): base(idCategoriaPelicula, nombreCategoria) {
+        Id = id;
         Nombre = nombre;
         Imagen = imagen;
         Director = director;

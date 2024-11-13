@@ -1,7 +1,7 @@
 namespace Models;
 
 public class Entrada {
-    public int IdEntrada {get;set;}
+    public int Id {get;set;}
     public decimal Precio {get;set;}
     //public string IdUsuario {get;set;}
     public DateOnly Horario {get;set;}
@@ -12,8 +12,8 @@ public class Entrada {
 
 
 
-    public Entrada(int identrada, decimal precio, DateOnly horario) {
-        IdEntrada = identrada;
+    public Entrada(int id, decimal precio, DateOnly horario) {
+        Id = id;
         Precio = precio;
         Horario = horario;
         // if (string.IsNullOrEmpty(nombre))

@@ -1,15 +1,15 @@
 namespace Models;
 
 public class Sala {
-    public int IdSala {get;set;}
+    public int Id {get;set;}
     public int IdAsiento {get;set;}
 
 
 
 
 
-    public Sala(int idsala, int idasiento) {
-        IdSala = idsala;
+    public Sala(int id, int idasiento) {
+        Id = id;
         IdAsiento = idasiento;
         // if (string.IsNullOrEmpty(nombre))
         // {

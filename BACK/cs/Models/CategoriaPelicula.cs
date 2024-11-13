@@ -1,13 +1,13 @@
 namespace Models;
 
 public class CategoriaPelicula {
-    public int IdCategoriaPelicula {get;set;}
+    public int Id {get;set;}
     public string NombreCategoria {get;set;}
 
 
 
-    public CategoriaPelicula(int idCategoriaPelicula, string nombreCategoria) {
-        IdCategoriaPelicula = idCategoriaPelicula;
+    public CategoriaPelicula(int id, string nombreCategoria) {
+        Id = id;
         NombreCategoria = nombreCategoria;
         
         // if (string.IsNullOrEmpty(nombre))

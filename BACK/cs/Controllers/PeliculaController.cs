@@ -19,7 +19,7 @@ namespace CineApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<Pelicula> GetById(int id)
         {
-            var pelicula = peliculas.FirstOrDefault(p => p.IdPelicula == id);
+            var pelicula = peliculas.FirstOrDefault(p => p.Id == id);
             if (pelicula == null)
                 return NotFound();
             return Ok(pelicula);
@@ -29,13 +29,13 @@ namespace CineApi.Controllers
         public ActionResult<Pelicula> Create([FromBody] Pelicula pelicula)
         {
             peliculas.Add(pelicula);
-            return CreatedAtAction(nameof(GetById), new { id = pelicula.IdPelicula }, pelicula);
+            return CreatedAtAction(nameof(GetById), new { id = pelicula.Id }, pelicula);
         }
 
         [HttpPut("{id}")]
         public ActionResult Update(int id, [FromBody] Pelicula updatedPelicula)
         {
-            var pelicula = peliculas.FirstOrDefault(p => p.IdPelicula == id);
+            var pelicula = peliculas.FirstOrDefault(p => p.Id == id);
             if (pelicula == null)
                 return NotFound();
 
@@ -55,7 +55,7 @@ namespace CineApi.Controllers
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            var pelicula = peliculas.FirstOrDefault(p => p.IdPelicula == id);
+            var pelicula = peliculas.FirstOrDefault(p => p.Id == id);
             if (pelicula == null)
                 return NotFound();
 

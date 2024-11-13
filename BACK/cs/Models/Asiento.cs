@@ -1,7 +1,7 @@
 namespace Models;
 
 public class Asiento {
-    public int IdAsiento {get;set;}
+    public int Id {get;set;}
     public int Fila {get;set;}
     public int Columna {get;set;}
     public int NumAsiento {get;set;}
@@ -10,8 +10,8 @@ public class Asiento {
 
 
 
-    public Asiento(int idasiento, int fila, int columna, int numasiento, double estado) {
-        IdAsiento = idasiento;
+    public Asiento(int id, int fila, int columna, int numasiento, double estado) {
+        Id = id;
         Fila = fila;
         Columna = columna;
         NumAsiento = numasiento;

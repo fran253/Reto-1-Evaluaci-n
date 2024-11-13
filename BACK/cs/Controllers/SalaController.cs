@@ -18,7 +18,7 @@ namespace CineApi.Controllers
         [HttpGet("{id}")]
         public ActionResult<Sala> GetById(int id)
         {
-            var sala = Salas.FirstOrDefault(s => s.IdSala == id);
+            var sala = Salas.FirstOrDefault(s => s.Id == id);
             if (sala == null)
                 return NotFound();
             return Ok(sala);

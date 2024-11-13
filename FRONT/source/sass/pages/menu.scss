@@ -19,16 +19,33 @@
         margin-bottom: 20px;
         color: #fff;
     }
-    .peliculas {
+       
+        
+        
+
+    
+    #owl-pelis{
         margin-top: 5%;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
         gap: 40px;
+        .item {
+            height: 400px; 
+            background: #446BCD;
+            margin: 10px;
+            color: #FFF;
+            text-align: center;
+            h3 {
+                height: 5%;
+                font-size: 16px;
+                align-content: start;
+                
+            }
+
+        }
         .pelicula {
             height: 100%;
             width: auto;
             background-color: #446BCD;
-            border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             img {
@@ -36,15 +53,9 @@
                 height: 90%;
                 display: block;
             }
-            h3 {
-                font-size: 16px;
-                align-content: start;
-                
-            }
+            
         }
-        
-    }
+    } 
     
-
 }
 
