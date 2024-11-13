@@ -21,37 +21,28 @@
         </nav>
     </header>
 
+    
     <main class="main-content">
-        <div class="movie-details-container">
-            <h2 class="movie-title">SIN CHAN</h2>
-            <img src="../imgs/MonstersvsAliens.jpg" alt="Póster de Sin Chan" class="movie-poster">
-            <p class="movie-info"><strong>Cine:</strong> Nombre_Cine</p>
-            <p class="movie-info"><strong>Horario:</strong> Horario_Cine</p>
-            <div class="trailer">
-                <a href="#" target="_blank">
-                    <img src="../imgs/trailer-icon.png" alt="Ver Trailer" class="trailer-icon">
-                </a>
+        <h1 class="movie-title">Monstruos vs aliens</h1>
+        <div class="movie-layout">
+            <div class="movie-poster">
+                <img src="../imgs/MonstersvsAliens.jpg" alt="Póster de MvsA" class="movie-poster-image">
+            </div>
+            <div class="movie-details">
+
+                <p><strong>Cine:</strong> Nombre_Cine</p>
+                <p><strong>Horario:</strong> Horario_Cine</p>
+            </div>
+            <div class="movie-trailer">
+                <h2>Trailer</h2>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+                        title="Trailer de Sin Chan" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
             </div>
         </div>
-
-        <!-- Leyenda de Asientos -->
-        <div class="seat-legend">
-            <div class="legend-item"><span class="seat free"></span> Libre</div>
-            <div class="legend-item"><span class="seat occupied"></span> Ocupado</div>
-            <div class="legend-item"><span class="seat selected"></span> Seleccionado</div>
-            <div class="legend-item"><span class="seat vip"></span> VIP</div>
-        </div>
-
-        <!-- Pantalla -->
-        <div class="screen">Pantalla</div>
-
-        <!-- Cuadrícula de Asientos -->
-        <div class="seats-container">
-            <!-- Aquí se generarán los asientos usando JavaScript -->
-        </div>
-
-        <!-- Botón de Comprar Entradas -->
-        <button class="purchase-button">Comprar Entradas</button>
     </main>
 
     <footer class="footer">
@@ -82,6 +73,6 @@
         </div>
     </footer>
 
-    <script src="../js/ReservarAsientos.js  "></script>
+    <script src="../js/ReservaAsientos.js"></script>
 </body>
 </html>
